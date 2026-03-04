@@ -1,0 +1,25 @@
+{
+  "bot": {
+    "prefix": "!",
+    "color": "#0099FF"
+  },
+  "tickets": {
+    "category": "Tickets",
+    "reopenTime": 5000,
+    "maxTickets": 3
+  },
+  "messages": {
+    "ticket_welcome": "Bem-vindo ao seu ticket! 🎫\n\nDescreva seu problema ou necessidade abaixo e aguarde uma resposta da staff.",
+    "ticket_closed": "Este ticket foi fechado pela staff.",
+    "sale_created": "Um novo ticket de venda foi criado! Descrição do produto será enviada em breve.",
+    "payment_approved": "✅ Pagamento aprovado! Obrigado pela compra!",
+    "payment_rejected": "❌ Pagamento rejeitado. Entre em contato com a staff."
+  },
+  "emojis": {
+    "ticket": "🎫",
+    "product": "🛍️",
+    "success": "✅",
+    "error": "❌",
+    "loading": "⏳"
+  }
+}
