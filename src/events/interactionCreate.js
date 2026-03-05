@@ -9,6 +9,19 @@ export default {
   once: false,
 
   async execute(client, interaction) {
+    // Processar Autocomplete
+    if (interaction.isAutocomplete()) {
+      const command = interaction.client.commands.get(interaction.commandName);
+
+      if (!command || !command.autocomplete) return;
+
+      try {
+        await command.autocomplete(interaction);
+      } catch (error) {
+        console.error("Erro ao processar autocomplete:", error);
+      }
+    }
+
     // Processar Slash Commands
     if (interaction.isChatInputCommand()) {
       const command = interaction.client.commands.get(interaction.commandName);
